@@ -68,6 +68,72 @@
            margin-top: 50px; /* Add some space above */
            display: block; /* Ensure it takes its own line */
        }
+  .countdown-grid {
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+           margin-bottom: 50px;
+       }
+       .countdown-item {
+           background-color: rgba(255, 182, 193, 0.8); /* Pinkish background for boxes */
+           padding: 20px 30px;
+           border-radius: 10px;
+           color: #333;
+           font-size: 1.5em;
+           font-weight: bold;
+           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+           min-width: 100px;
+       }
+       .countdown-item .value {
+           font-size: 2.5em;
+           display: block;
+           margin-bottom: 5px;
+       }
+       .countdown-item .label {
+           font-size: 0.8em;
+           text-transform: uppercase;
+       }
+       .surprise-button {
+           background-color: #ff69b4; /* Hot pink */
+           color: white;
+           padding: 15px 40px;
+           border: none;
+           border-radius: 30px;
+           font-size: 1.5em;
+           cursor: pointer;
+           transition: background-color 0.3s ease, transform 0.2s ease;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin: 0 auto;
+           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+       }
+       .surprise-button:hover {
+           background-color: #ff1493; /* Darker pink on hover */
+           transform: translateY(-2px);
+       }
+       .surprise-button .heart-icon {
+           margin-left: 10px;
+           font-size: 1.2em; /* Adjust heart size */
+       }
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="italic" >Our Journey</h1>
+<p class = "italic">"Our one-year Journey, a tapestry woven with blissful surprises. Every moment with you cherished blessing :) Every second in your presence is priceless, every moment we share unfolds beautifully, though it feels our destiny was already sketched, meeting you when we did made our story exactly as it was meant to be. Happy Unexpected Anniversary."</p>
+<div class="countdown-grid">
+<div class="countdown-item">
+<span class="value">1</span>
+<span class="label">Years</span>
+</div>
+<div class="countdown-item">
+<span class="value">2</span>
+<span class="label">Months</span>
+</div>
+<div class="countdown-item">
+<span class="value">497</span>
+<span class="label">Days</span>
 </style>
 <body>
 <div class="background-overlay">
