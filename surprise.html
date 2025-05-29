@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise For You!</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+       /* Basic CSS for styling the surprise page */
+       body {
+           font-family: 'Arial', sans-serif;
+           background: linear-gradient(to right, #f4eeed 0%, #e29bdd 100%); /* A nice gradient background */
+           color: #333;
+           margin: 0;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           min-height: 100vh; /* Ensures it takes full viewport height */
+           text-align: center;
+           padding: 20px;
+           box-sizing: border-box; /* Include padding in element's total width and height */
+       }
+       .container {
+           background-color: #cd50a3;
+           border-radius: 15px;
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+           padding: 40px;
+           text-align: center;
+           max-width: 600px;
+           width: 100%;
+       }
+       h1 {
+           color: #8800ff; /* A vibrant purple */
+           font-size: 1.8rem;
+           margin-bottom: 20px;
+           text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+           font-family: 'Playfair Display', serif;
+       }
+       p {
+           font-size: 1.2em;
+           max-width: 800px;
+           line-height: 1.6;
+           margin-bottom: 40px;
+       }
+        .italic {
+           font-family: italic; /* A beautiful script font */
+           font-size: 1rem; /* Make it a bit larger to stand out */
+           color: #cf0dc9; /* A romantic red color */
+           font-weight: 700; /* Make it bold */
+           margin-top: 50px; /* Add some space above */
+           display: block; /* Ensure it takes its own line */
+       }
+       .elegant-font {
+           font-family: 'Playfair Display', oblique; /* An elegant serif font */
+           font-size: 1.7rem;
+           color: #4CAF50; /* A pleasant green color */
+           font-weight: 700;
+           margin-top: 30px;
+           display: block;
+       }
+       /* Method 3: Using a generic sans-serif font with different styling */
+       .modern-font {
+           font-family: 'Inter', sans-serif; /* Using a modern sans-serif */
+           font-size: 1.6rem;
+           color: #040414; /* A cool blue color */
+           font-weight: 700;
+           letter-spacing: 1px; /* Add a little letter spacing */
+           margin-top: 30px;
+           display: block;
+       }
+
+       
+       .image-gallery {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for images */
+           gap: 20px;
+           padding: 20px;
+           max-width: 1200px; /* Limit gallery width */
+           width: 100%;
+       }
+       .image-gallery img {
+           width: 100%;
+           height: 250px; /* Fixed height for consistency */
+           object-fit: cover; /* Ensures images cover the area without distortion */
+           border-radius: 15px;
+           box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+           transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+       }
+       .image-gallery img:hover {
+           transform: scale(1.05); /* Slightly enlarge on hover */
+           box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+       }
+       .back-button {
+           display: inline-block;
+           margin-top: 20px;
+           padding: 15px 30px;
+           background-color: #f40e90c0; /* Pink */
+           color: white;
+           text-decoration: none;
+           border-radius: 50px;
+           font-size: 1.1em;
+           transition: background-color 0.3s ease, transform 0.2s ease;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .back-button:hover {
+           background-color: #ff1493; /* Darker pink */
+           transform: translateY(-2px);
+       }
+       /* Media queries for smaller screens */
+       @media (max-width: 768px) {
+           h1 {
+               font-size: 2.5em;
+           }
+           .cursive-font, .elegant-font, .modern-font {
+               font-size: 1.5rem;
+           }
+           p {
+               font-size: 1.6rem;
+           }
+           .container {
+            padding:25px;
+           }
+           .image-gallery {
+               grid-template-columns: 1fr; /* Single column on small screens */
+           }
+           .image-gallery img {
+               height: 200px;
+           }
+       }
+</style>
+</head>
+<body>
+    
+<h1 class="italic">Our Special Moments !</h1>
+
+  
+
+
+<div class="image-gallery">
+<img src="date.jpg" alt="Surprise Image 1">
+<img src="images/val.png" alt="Surprise Image 2">
+<img src="images/sansa.png" alt="Surprise Image 3">
+<img src="images/part.png" alt="Surprise Image 4">
+<img src="images/ootyyyy.png" alt="Surprise Image 5">
+<img src="images/chik.jpg" alt="Surprise Image 6">
+<img src="images/dateeee.png" alt="Surprise Image 7">
+<img src="images/cloud.png" alt="Surprise Image 8">
+<img src="images/ooty.png" alt="Surprise Image 9">
+<img src="images/car.png" alt="Surprise Image 10">
+
+</div>
+<h1 class="italic">Our journey together  !</h1>
+
+
+<p class = "italic">Our laughter,joy,Our shared silly moments these are the threads that weave the most beautiful story .Each Snapshot holds a piece of our hearts, a moment we've cherished As we look back, i'm reminded of how truly lucky iam to have you my love.</p>
+<p class = " italic">Happy Anniversary to my Love ❤️ </p>
+
+<a href="Sat.html" class="back-button">My Dove</a>
+</body>
+</html>
