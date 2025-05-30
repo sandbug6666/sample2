@@ -4,100 +4,135 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Journey</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
        body {
-           font-family: sans-serif;
-           background-color: #1e1e1e; /* Dark background similar to coding environment */
-           color: #d4d4d4; /* Light grey text */
+           margin: 0;
+           font-family: Arial, sans-serif;
            display: flex;
-           flex-direction: column;
            justify-content: center;
            align-items: center;
-           min-height: 100vh;
-           margin: 0;
+           min-height: 20vh;
+           background-image: url('images/mom4.jpg'); /* Replace with your image URL */
+           background-size: cover;
+           background-position: center;
+           color: white;
            text-align: center;
-           padding: 20px;
-           box-sizing: border-box;
-       }
-       .container {
-           background-color: #252526; /* Slightly lighter dark background for container */
-           padding: 30px;
-           border-radius: 8px;
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-           max-width: 600px;
-           width: 100%;
-       }
-       p {
-           font-size: 1.1em;
-           margin-bottom: 25px;
-           line-height: 1.6;
-           color: #c586c0; /* Purple for text */
+           overflow: hidden; /* To prevent scrollbars if content is slightly larger */
        }
        
-       .countdown-item {
-           background-color: #333333; /* Darker grey for countdown boxes */
-           padding: 15px 15px;
-           border-radius: 8px;
-           text-align: center;
-           min-width: 30px; /* Ensure boxes have a minimum width */
-           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-           position: relative; /* For positioning the label */
+       h1 {
+           font-size: 3em;
+           color: #ffb6c1; /* A light pink/rose color similar to the image */
+           margin-bottom: 20px;
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
        }
-       .countdown-item .label {
-           font-size: 0.9em;
-           color: #888888; /* Lighter grey for labels */
-           display: block; /* Make label appear above value */
-           margin-bottom: 5px;
+       .italic {
+           font-family: italic; /* A beautiful script font */
+           font-size: 1rem; /* Make it a bit larger to stand out */
+           color: #cf0dc9; /* A romantic red color */
+           font-weight: 300; /* Make it bold */
+           margin-top: 30px; /* Add some space above */
+           display: block; /* Ensure it takes its own line */
        }
-       .countdown-item .value {
-           font-size: 1em;
-           font-weight: Normal;
-           color: #569cd6; /* Blue for the values (like in coding syntax highlighting) */
+       .elegant-font {
+           font-family: 'Playfair Display', oblique; /* An elegant serif font */
+           font-size: 1.7rem;
+           color: #4CAF50; /* A pleasant green color */
+           font-weight: 700;
+           margin-top: 30px;
            display: block;
        }
+       /* Method 3: Using a generic sans-serif font with different styling */
+       .modern-font {
+           font-family: 'Inter', sans-serif; /* Using a modern sans-serif */
+           font-size: 1.6rem;
+           color: #040414; /* A cool blue color */
+           font-weight: 700;
+           letter-spacing: 1px; /* Add a little letter spacing */
+           margin-top: 30px;
+           display: block;
+       }
+       p {
+           font-size: 1.2em;
+           line-height: 1.6;
+           margin-bottom: 40px;
+           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+       }
+       .countdown-grid {
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+           margin-bottom: 50px;
+       }
+       .countdown-item {
+           background-color: rgba(255, 182, 193, 0.8); /* Pinkish background for boxes */
+           padding: 15px 15px;
+           border-radius: 10px;
+           color: #8a5b7a;
+           font-size: 1.5em;
+           font-weight: bold;
+           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+           min-width: 100px;
+       }
+       .countdown-item .value {
+           font-size: 2.5em;
+           display: block;
+           margin-bottom: 5px;
+       }
+       .countdown-item .label {
+           font-size: 0.8em;
+           text-transform: uppercase;
+       }
        .surprise-button {
-           background: linear-gradient(to right, #6a0572, #ab53cc); /* Purple gradient */
-           border: none;
+           background-color: #ff69b4; /* Hot pink */
            color: white;
-           padding: 12px 25px;
-           font-size: 1.1em;
-           border-radius: 25px;
+           padding: 15px 40px;
+           border: none;
+           border-radius: 30px;
+           font-size: 1.5em;
            cursor: pointer;
-           display: inline-flex;
+           transition: background-color 0.3s ease, transform 0.2s ease;
+           display: flex;
            align-items: center;
-           gap: 8px;
-           transition: transform 0.2s ease, box-shadow 0.2s ease;
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-           text-decoration: none; /* If it's an anchor tag */
+           justify-content: center;
+           margin: 0 auto;
+           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
        }
        .surprise-button:hover {
+           background-color: #ff1493; /* Darker pink on hover */
            transform: translateY(-2px);
-           box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
        }
-       .heart-icon {
-           font-size: 1.3em;
-           color: #ff69b4; /* Hot pink for the heart */
+       .surprise-button .heart-icon {
+           margin-left: 10px;
+           font-size: 1.2em; /* Adjust heart size */
        }
 </style>
 </head>
 <body>
-
-<p>Our one-year Journey, a tapestry woven with blissful surprises. Every moment with you cherished blessing :) Every second in your presence is priceless, every moment we share unfolds beautifully, though it feels our destiny was already sketched, meeting you when we did made our story exactly as it was meant to be  My Love❤️ </p>
-<p>Happy Anniversary."</p>
-<div class="countdown-container">
+<div class="container">
+<h1 class="italic">Our Journey</h1>
+<p class="italic">"Our one-year Journey, a tapestry woven with blissful surprises. Every moment with you cherished blessing :) Every second in your presence is priceless, every moment we share unfolds beautifully, though it feels our destiny was already sketched, meeting you when we did made our story exactly as it was meant to be.</p>
+<p class="italic" >Happy  Anniversary</p> 
+<div class="countdown-grid">
 <div class="countdown-item">
-<span class="label">Years</span>
-<span class="value" id="years">1</span>
-</div> 
+<span class="value">1</span>
+<span class="label">Year</span>
+</div>
 <div class="countdown-item">
+<span class="value">2</span>
 <span class="label">Months</span>
-<span class="value" id="Months">2</span>
 </div>
 <div class="countdown-item">
+<span class="value">497</span>
 <span class="label">Days</span>
-<span class="value" id="days">497</span>
 </div>
-<button class="surprise-button" onclick="location.href='surprise.html'">
-           Surprise <span class="heart-icon">❤️</span>
+</div>
+
+   <button class="surprise-button" onclick="location.href='surprise.html'">
+      Surprise <span class="heart-icon">❤️</span>
 </button>
 </div>
+</body>
+</html>
